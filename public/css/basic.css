@@ -1,0 +1,16 @@
+html {
+	background-image: url("../img/_background.jpg");
+	background-size: 1920px 1070px;
+	}
+	
+.top-nav {
+	position: absolute;
+	width: auto;
+	height: 150px;
+	background-color: #3333f0;
+	}
+	
+#nav-logo {
+	padding-left: 20px;
+	width: 150px;
+	}
