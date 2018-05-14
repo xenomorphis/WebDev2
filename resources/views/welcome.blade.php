@@ -13,6 +13,8 @@
         <link href="/css/basic.css" rel="stylesheet" type="text/css">
         
         <script src="/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+        <script src="/js/jquery-3.3.1.slim.min.js" type="text/javascript"></script>
+        <script src="/js/basic.js" type="text/javascript"></script>
 
         <!-- Styles -->
         <style>
