@@ -6,8 +6,30 @@ body {
 	background-attachment: fixed;
 	}
 	
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+	background-color: rgb(46,42,136);
+	border-top-width: 2px;
+	border-style: solid none none;
+	border-color: #f1f787;
+	text-align: center;
+	}
+	
+footer > p {
+	margin-right: 15px;
+	display: inline;
+	}
+	
+footer > p, a {
+	font-family: Source Sans Pro;
+	color: #f1f787;
+	}
+	
 .navbar {
-	background-color: rgba(46,42,136,0.6);
+	background-color: rgba(46,42,136,0.7);
 	border-bottom-width: 2px;
 	border-style: none none solid;
 	border-color: #f1f787;
@@ -20,11 +42,20 @@ body {
 	border-style: none solid none;
 	border-color: #f1f787;
 	}
+	
+.nav-item:hover {
+	background-color: rgba(130,120,255,0.8);
+	}
 
 .nav-link {
 	font-family: Courgette;
 	font-size: 24px;
 	color: #f1f780 !important;
+	}
+	
+.page-content {
+	background-color: rgba(242,249,135,0.6);
+	margin-top: 400px;
 	}
 	
 #nav-logo {

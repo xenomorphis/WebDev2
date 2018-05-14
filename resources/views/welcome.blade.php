@@ -16,13 +16,6 @@
 
         <!-- Styles -->
         <style>
-            html, body {
-                color: #636b6f;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
-
             .full-height {
                 height: 100vh;
             }
@@ -51,16 +44,6 @@
                 font-size: 84px;
             }
 
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
             .m-b-md {
                 margin-bottom: 30px;
             }
@@ -77,13 +60,13 @@
         			<div class="collapse navbar-collapse" id="navbarResponsive">
           		<ul class="navbar-nav ml-auto">
             		<li class="nav-item">
-              			<a class="nav-link" href="https://laravel.com/docs">Documentation</a>
+              			<a class="nav-link" href="https://laravel.com/docs">New Stuff</a>
             		</li>
             		<li class="nav-item">
-              			<a class="nav-link" href="https://laravel-news.com">News</a>
+              			<a class="nav-link" href="https://laravel-news.com">Artists</a>
         		    	</li>
             		<li class="nav-item">
-              			<a class="nav-link" href="https://github.com/laravel/laravel">GitHub</a>
+              			<a class="nav-link" href="https://github.com/laravel/laravel">Location</a>
             		</li>
           		</ul>
         			</div>
@@ -103,11 +86,16 @@
                 </div>
             @endif
 
-            <div class="content">
-                <div class="title m-b-md highlight-text">
+				<div class="container full-height page-content">
+            	<div class="content">
+               	<div class="title m-b-md highlight-text">
                     Laravel
-                </div>
-            </div>
+               	</div>
+            	</div>
+       		</div>
         </div>
+        <footer>
+            <p> &copy;2018 SpotLight, NAC</p> <p> |</p> <p> <a href="#">Impressum</a> </p> <p> |</p> <p> <a href="#">Datenschutzerklärung</a> </p>
+        </footer>
     </body>
 </html>
