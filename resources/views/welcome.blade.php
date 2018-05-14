@@ -5,11 +5,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Spotlight Events - Start</title>
 
-        <!-- Fonts -->
+        <!-- Stylesheets -->
+        <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="/css/fonts.css" rel="stylesheet" type="text/css">
         <link href="/css/basic.css" rel="stylesheet" type="text/css">
+        
+        <script src="/js/bootstrap.bundle.min.js" type="text/javascript"></script>
 
         <!-- Styles -->
         <style>
@@ -65,7 +68,27 @@
     </head>
     <body>
     	  <div class="top-nav">
-    	  		<img id="nav-logo" src="/img/_logo.png" alt="Spotlight Events">
+    	  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      		<div class="container">
+        			<img id="nav-logo" src="/img/_logoS.png" alt="Spotlight Events">
+        			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          		 	<span class="navbar-toggler-icon"></span>
+        			</button>
+        			<div class="collapse navbar-collapse" id="navbarResponsive">
+          		<ul class="navbar-nav ml-auto">
+            		<li class="nav-item">
+              			<a class="nav-link" href="https://laravel.com/docs">Documentation</a>
+            		</li>
+            		<li class="nav-item">
+              			<a class="nav-link" href="https://laravel-news.com">News</a>
+        		    	</li>
+            		<li class="nav-item">
+              			<a class="nav-link" href="https://github.com/laravel/laravel">GitHub</a>
+            		</li>
+          		</ul>
+        			</div>
+      		</div>
+    	  </nav>	  		
     	  </div>
     	  
         <div class="flex-center position-ref full-height">
@@ -83,14 +106,6 @@
             <div class="content">
                 <div class="title m-b-md highlight-text">
                     Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
             </div>
         </div>

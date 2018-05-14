@@ -1,17 +1,30 @@
-html {
+body {
+	background-color: transparent;
 	background-image: url("../img/_background.jpg");
 	background-size: 1920px 1070px;
 	}
 	
-.top-nav {
-	position: absolute;
-	top: 0px;
-	width: auto;
-	height: 150px;
-	<!--background-color: #3333f0;
+.navbar {
+	background-color: rgba(46,42,136,0.6);
+	border-bottom-width: 2px;
+	border-style: none none solid;
+	border-color: #f1f787;
+	}
+
+.nav-item {
+	width: 200px;
+	text-align: center;
+	border-width: 1px;
+	border-style: none solid none;
+	border-color: #f1f787;
+	}
+
+.nav-link {
+	font-family: Courgette;
+	font-size: 24px;
+	color: #f1f780 !important;
 	}
 	
 #nav-logo {
-	padding-left: 20px;
 	width: 150px;
 	}
