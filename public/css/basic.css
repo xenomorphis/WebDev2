@@ -2,6 +2,8 @@ body {
 	background-color: transparent;
 	background-image: url("../img/_background.jpg");
 	background-size: 1920px 1070px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	}
 	
 .navbar {
