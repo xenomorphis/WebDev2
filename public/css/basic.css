@@ -16,10 +16,19 @@ footer {
 	border-style: solid none none;
 	border-color: #f1f787;
 	text-align: center;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.5s;
+	-webkit-transition: opacity 0.5s;
 	}
+	
+footer.shown {
+	opacity: 1;
+}
 	
 nav {
 	min-height: 116px;
+	-webkit-transition: min-height 0.5s;
 	transition: min-height 0.5s;
 	}
 	
