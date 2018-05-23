@@ -13,16 +13,11 @@
         <link href="/css/basic.css" rel="stylesheet" type="text/css">
         
         <script src="/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+        <script src="/js/jquery-3.3.1.slim.min.js" type="text/javascript"></script>
+        <script src="/js/basic.js" type="text/javascript"></script>
 
         <!-- Styles -->
         <style>
-            html, body {
-                color: #636b6f;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
-
             .full-height {
                 height: 100vh;
             }
@@ -51,16 +46,6 @@
                 font-size: 84px;
             }
 
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
             .m-b-md {
                 margin-bottom: 30px;
             }
@@ -77,13 +62,13 @@
         			<div class="collapse navbar-collapse" id="navbarResponsive">
           		<ul class="navbar-nav ml-auto">
             		<li class="nav-item">
-              			<a class="nav-link" href="https://laravel.com/docs">Documentation</a>
+              			<a class="nav-link" href="/">New Stuff</a>
             		</li>
             		<li class="nav-item">
-              			<a class="nav-link" href="https://laravel-news.com">News</a>
+              			<a class="nav-link" href="https://laravel-news.com">Artists</a>
         		    	</li>
             		<li class="nav-item">
-              			<a class="nav-link" href="https://github.com/laravel/laravel">GitHub</a>
+              			<a class="nav-link" href="https://github.com/laravel/laravel">Location</a>
             		</li>
           		</ul>
         			</div>
@@ -103,19 +88,15 @@
                 </div>
             @endif
 
-            <div class="content">
-                <div class="title m-b-md highlight-text">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
+				<div class="container full-height page-content">
+            	<div class="content">
+            		@yield('eyecatcher')
+               	@yield('maincontent')
+            	</div>
+       		</div>
         </div>
+        <footer>
+            <p> &copy;2018 SpotLight, NAC</p> <p> |</p> <p> <a href="/impressum">Impressum</a> </p> <p> |</p> <p> <a href="#">Datenschutzerklärung</a> </p>
+        </footer>
     </body>
 </html>

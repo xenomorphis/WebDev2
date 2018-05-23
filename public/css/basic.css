@@ -47,6 +47,12 @@ footer > p > a:hover {
 	color: #fff;
 	}
 	
+.fulltext {
+	text-align: left;
+	padding-left: 38px;
+	padding-top: 65px;
+	}
+	
 .navbar {
 	background-color: rgba(46,42,136,0.7);
 	border-bottom-width: 2px;
