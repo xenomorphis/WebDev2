@@ -90,9 +90,11 @@
 
 				<div class="container full-height page-content">
             	<div class="content">
+            		@yield('eyecatcher')
                	<div class="title m-b-md highlight-text">
                     Laravel
                	</div>
+               	@yield('maincontent')
             	</div>
        		</div>
         </div>
