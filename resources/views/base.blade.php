@@ -96,7 +96,7 @@
        		</div>
         </div>
         <footer>
-            <p> &copy;2018 SpotLight, NAC</p> <p> |</p> <p> <a href="/impressum">Impressum</a> </p> <p> |</p> <p> <a href="#">Datenschutzerklärung</a> </p>
+            <p> &copy;2018 SpotLight, NAC</p> <p> |</p> <p> <a href="/impressum">Impressum</a> </p> <p> |</p> <p> <a href="/disclaimer">Datenschutzerklärung</a> </p>
         </footer>
     </body>
 </html>

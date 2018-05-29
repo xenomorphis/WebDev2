@@ -11,8 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('base');
-});
-
+Route::view('/','shop');
+Route::view('/disclaimer','disclaimer');
 Route::view('/impressum','impressum');
