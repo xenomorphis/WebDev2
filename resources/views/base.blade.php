@@ -38,17 +38,11 @@
                 top: 18px;
             }
 
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
             .m-b-md {
                 margin-bottom: 30px;
             }
+            
+            @yield('styles')
         </style>
     </head>
     <body>
@@ -77,26 +71,24 @@
     	  </div>
     	  
         <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                    @endauth
-                </div>
-            @endif
-
 				<div class="container full-height page-content">
             	<div class="content">
             		@yield('eyecatcher')
                	@yield('maincontent')
+               	@yield('sidebar')
             	</div>
        		</div>
         </div>
+        
         <footer>
-            <p> &copy;2018 SpotLight, NAC</p> <p> |</p> <p> <a href="/impressum">Impressum</a> </p> <p> |</p> <p> <a href="/disclaimer">Datenschutzerklärung</a> </p>
+            <p> &copy;2018 SpotLight, NAC</p> <p> |</p>
+            @guest
+            <p> <a href="/login">Login</a> </p>
+            @endguest
+				@auth
+				<p> <a href="#">Logout</a> </p>
+				@endauth            
+            <p> |</p> <p> <a href="/impressum">Impressum</a> </p> <p> |</p> <p> <a href="/disclaimer">Datenschutzerklärung</a> </p>
         </footer>
     </body>
 </html>
