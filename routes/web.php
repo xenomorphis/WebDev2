@@ -12,6 +12,7 @@
 */
 
 Route::view('/','shop');
+Route::view('/admin','admin');
 Route::view('/login','login');
 Route::view('/disclaimer','disclaimer');
 Route::view('/impressum','impressum');
