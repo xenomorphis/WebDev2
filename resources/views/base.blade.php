@@ -90,7 +90,7 @@
         <footer>
             <p> &copy;2018 SpotLight, NAC</p> <p> |</p>
             @guest
-            <p> <a href="/login">Login</a> </p>
+            <p> <a href="/login">Adminbereich</a> </p>
             @endguest
 				@auth
 				<p> <a href="/logout">Logout</a> </p>
