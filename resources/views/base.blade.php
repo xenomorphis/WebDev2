@@ -55,6 +55,7 @@
         			</button>
         			<div class="collapse navbar-collapse" id="navbarResponsive">
           		<ul class="navbar-nav ml-auto">
+          		@guest
             		<li class="nav-item">
               			<a class="nav-link" href="/">New Stuff</a>
             		</li>
@@ -64,6 +65,12 @@
             		<li class="nav-item">
               			<a class="nav-link" href="https://github.com/laravel/laravel">Location</a>
             		</li>
+            		@endguest
+            		@auth
+            		<li class="nav-item">
+							<p class="nav-link">Administration</p>            		
+            		</li>
+            		@endauth
           		</ul>
         			</div>
       		</div>
@@ -86,7 +93,7 @@
             <p> <a href="/login">Login</a> </p>
             @endguest
 				@auth
-				<p> <a href="#">Logout</a> </p>
+				<p> <a href="/logout">Logout</a> </p>
 				@endauth            
             <p> |</p> <p> <a href="/impressum">Impressum</a> </p> <p> |</p> <p> <a href="/disclaimer">Datenschutzerklärung</a> </p>
         </footer>

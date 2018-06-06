@@ -12,7 +12,9 @@
 */
 
 Route::view('/','shop');
-Route::view('/admin','admin');
-Route::view('/login','login');
 Route::view('/disclaimer','disclaimer');
 Route::view('/impressum','impressum');
+Auth::routes();
+
+Route::get('/admin', 'HomeController@index')->name('home');
+Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
