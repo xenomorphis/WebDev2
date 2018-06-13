@@ -60,10 +60,10 @@
               			<a class="nav-link" href="/">New Stuff</a>
             		</li>
             		<li class="nav-item">
-              			<a class="nav-link" href="https://laravel-news.com">Artists</a>
+              			<a class="nav-link" href="/artists">Artists</a>
         		    	</li>
             		<li class="nav-item">
-              			<a class="nav-link" href="https://github.com/laravel/laravel">Location</a>
+              			<a class="nav-link" href="/locations">Location</a>
             		</li>
             		@endguest
             		@auth

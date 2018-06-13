@@ -52,7 +52,7 @@
 @endsection
 
 @section('maincontent')
-                <h2 class="highlight-text blank-hdl"> Login </h2>
+                <h2 class="highlight-text blank-hdl"> Admin-Login </h2>
                     <form id="login-form" method="POST" action="{{ route('login') }}">
                         @csrf
 

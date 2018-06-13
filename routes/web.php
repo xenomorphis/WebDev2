@@ -12,6 +12,8 @@
 */
 
 Route::view('/','shop');
+Route::view('/artists','shop');
+Route::view('/locations','shop');
 Route::view('/disclaimer','disclaimer');
 Route::view('/impressum','impressum');
 Auth::routes();
