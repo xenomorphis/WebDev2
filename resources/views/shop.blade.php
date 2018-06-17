@@ -15,7 +15,7 @@
 
 	@else
 	
-		<!-- Content der Landing Page
+		<p> Landing Page </p>
 	
 	@endif
 @endsection

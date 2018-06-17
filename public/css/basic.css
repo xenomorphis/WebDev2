@@ -32,6 +32,10 @@ nav {
 	transition: min-height 0.5s;
 	}
 	
+p {
+	font-family: Source Sans Pro;
+	}
+	
 footer > p {
 	margin-right: 15px;
 	display: inline;
@@ -50,6 +54,7 @@ footer > p > a:hover {
 .fulltext {
 	text-align: left;
 	padding-left: 38px;
+	padding-right: 40px;
 	padding-top: 65px;
 	}
 	
