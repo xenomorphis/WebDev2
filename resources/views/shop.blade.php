@@ -31,14 +31,18 @@
 @endsection
 
 @section('eyecatcher')
-	<div class="fulltext">	
-		<form id="page-search" method="GET" action="">
-			<label for="search-field" class="highlight-text search-gui">Finde dein Event:</label>
-			<input id="search-field" class="col-md-8 search-gui" type="text" name="phrase" required>
-			<button type="submit" class="btn-md btn-primary search-gui">SUCHEN</button>
-		</form>
-	</div>
-	<hr/>
+	@if (Request::path() == 'artists' || Request::path() == 'cabaret' || Request::path() == 'concerts' || Request::path() == 'locations' || Request::path() == 'theatre')
+		<div class="fulltext">	
+			<form id="page-search" method="GET" action="">
+				<label for="search-field" class="highlight-text search-gui">Finde dein Event:</label>
+				<input id="search-field" class="col-md-8 search-gui" type="text" name="phrase" required>
+				<button type="submit" class="btn-md btn-primary search-gui">SUCHEN</button>
+			</form>
+		</div>
+		<hr/>
+	@else
+	
+	@endif
 @endsection
 
 @section('maincontent')
