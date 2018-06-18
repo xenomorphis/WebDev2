@@ -49,7 +49,7 @@
     	  <div class="top-nav">
     	  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       		<div class="container">
-        			<img id="nav-logo" src="/img/_logoS.png" alt="Spotlight Events">
+        			<a href="/"> <img id="nav-logo" src="/img/_logoS.png" alt="Spotlight Events"> </a>
         			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           		 	<span class="navbar-toggler-icon"></span>
         			</button>

@@ -32,10 +32,6 @@ nav {
 	transition: min-height 0.5s;
 	}
 	
-p {
-	font-family: Source Sans Pro;
-	}
-	
 footer > p {
 	margin-right: 15px;
 	display: inline;
