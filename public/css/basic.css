@@ -47,6 +47,14 @@ footer > p > a:hover {
 	color: #fff;
 	}
 	
+.dropdown-item {
+	width: 200px;
+	}
+	
+.dropdown-menu {
+	background-color: #f1f787;
+	}
+	
 .fulltext {
 	text-align: left;
 	padding-left: 38px;

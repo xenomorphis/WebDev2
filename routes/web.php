@@ -13,7 +13,10 @@
 
 Route::view('/','shop');
 Route::view('/artists','shop');
+Route::view('/cabaret','shop');
+Route::view('/concerts','shop');
 Route::view('/locations','shop');
+Route::view('/theatre','shop');
 Route::view('/disclaimer','disclaimer');
 Route::view('/impressum','impressum');
 Auth::routes();

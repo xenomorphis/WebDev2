@@ -11,9 +11,9 @@
         <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="/css/fonts.css" rel="stylesheet" type="text/css">
         <link href="/css/basic.css" rel="stylesheet" type="text/css">
-        
+
+        <script src="/js/jquery-3.3.1.slim.min.js" type="text/javascript"></script>        
         <script src="/js/bootstrap.bundle.min.js" type="text/javascript"></script>
-        <script src="/js/jquery-3.3.1.slim.min.js" type="text/javascript"></script>
         <script src="/js/basic.js" type="text/javascript"></script>
 
         <!-- Styles -->
@@ -56,8 +56,13 @@
         			<div class="collapse navbar-collapse" id="navbarResponsive">
           		<ul class="navbar-nav ml-auto">
           		@guest
-            		<li class="nav-item">
-              			<a class="nav-link" href="/">New Stuff</a>
+            		<li class="nav-item dropdown">
+              			<a class="nav-link dropdown-toggle" href="#" id="subnav" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Genres</a>
+              			<ul class="dropdown-menu" aria-labelledby="subnav">
+              				<li><a class="dropdown-item" href="/cabaret">Kleinkunst</a></li>
+              				<li><a class="dropdown-item" href="/concerts">Konzerte</a></li>
+              				<li><a class="dropdown-item" href="/theatre">Musicals & Theater</a></li>
+              			</ul>
             		</li>
             		<li class="nav-item">
               			<a class="nav-link" href="/artists">Artists</a>
