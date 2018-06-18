@@ -68,7 +68,7 @@
               			<a class="nav-link" href="/artists">Artists</a>
         		    	</li>
             		<li class="nav-item">
-              			<a class="nav-link" href="/locations">Location</a>
+              			<a class="nav-link" href="/locations">Locations</a>
             		</li>
             		@endguest
             		@auth
