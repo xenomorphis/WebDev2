@@ -28,6 +28,14 @@
 		color: #f7f107;
 		text-shadow: 1px 1px #777;
 	}
+	
+	#showcase {
+		position: relative;
+		width: 900px;
+		padding-top: 68px;
+		margin: auto;
+		z-index: 1;
+	}
 @endsection
 
 @section('eyecatcher')
@@ -41,34 +49,55 @@
 		</div>
 		<hr/>
 	@else
-	
+		<div id="showcase" class="carousel slide" data-ride="carousel" data-interval="5000">
+  			<ol class="carousel-indicators">
+   			<li data-target="#showcase" data-slide-to="0" class="active"></li>
+    			<li data-target="#showcase" data-slide-to="1"></li>
+  			</ol>
+  			<div class="carousel-inner">
+    			<div class="carousel-item active">
+      			<img class="d-block w-100" src="/img/dummy1.jpg" alt="First slide">
+    			</div>
+    			<div class="carousel-item">
+      			<img class="d-block w-100" src="/img/dummy2.jpg" alt="Second slide">
+    			</div>
+  			</div>
+  			<a class="carousel-control-prev" href="#showcase" role="button" data-slide="prev">
+   	 		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    			<span class="sr-only">Previous</span>
+  			</a>
+  			<a class="carousel-control-next" href="#showcase" role="button" data-slide="next">
+    			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    			<span class="sr-only">Next</span>
+  			</a>
+		</div>
 	@endif
 @endsection
 
 @section('maincontent')
 	@if (Request::path() == 'artists')
 
-		<p> Page 2</p>
+		<p class="fulltext"> Page 2</p>
 		
 	@elseif (Request::path() == 'cabaret')
 	
-		<p> Page 4</p>
+		<p class="fulltext"> Page 4</p>
 	
 	@elseif (Request::path() == 'concerts')
 	
-		<p> Page 5</p>
+		<p class="fulltext"> Page 5</p>
 
 	@elseif (Request::path() == 'locations')
 
-		<p> Page 3</p>
+		<p class="fulltext"> Page 3</p>
 
 	@elseif (Request::path() == 'theatre')
 
-		<p> Page 6</p>
+		<p class="fulltext"> Page 6</p>
 		
 	@else
 	
-		<p> Landing Page </p>
+		<p class="fulltext"> Landing Page </p>
 	
 	@endif
 @endsection
