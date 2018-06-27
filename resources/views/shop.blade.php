@@ -23,6 +23,10 @@
 		margin-right: 20px;	
 	}
 	
+	.spacer {
+		padding-top: 150px;	
+	}
+	
 	#page-search > label {
 		font-size: 24px;
 		color: #f7f107;
@@ -31,10 +35,19 @@
 	
 	#showcase {
 		position: relative;
-		width: 900px;
-		padding-top: 68px;
+		width: 840px;
+		padding-top: 118px;
 		margin: auto;
 		z-index: 1;
+	}
+	
+	#showcase-frame {
+		position: absolute;
+		width: 1020px;
+		margin-bottom: 80px;
+		top: 240px;
+		left: 440px;
+		z-index: 2;
 	}
 @endsection
 
@@ -49,6 +62,7 @@
 		</div>
 		<hr/>
 	@else
+		<img id="showcase-frame" src="/img/sc_frame.png">
 		<div id="showcase" class="carousel slide" data-ride="carousel" data-interval="5000">
   			<ol class="carousel-indicators">
    			<li data-target="#showcase" data-slide-to="0" class="active"></li>
@@ -62,14 +76,6 @@
       			<img class="d-block w-100" src="/img/dummy2.jpg" alt="Second slide">
     			</div>
   			</div>
-  			<a class="carousel-control-prev" href="#showcase" role="button" data-slide="prev">
-   	 		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    			<span class="sr-only">Previous</span>
-  			</a>
-  			<a class="carousel-control-next" href="#showcase" role="button" data-slide="next">
-    			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-    			<span class="sr-only">Next</span>
-  			</a>
 		</div>
 	@endif
 @endsection
@@ -97,7 +103,7 @@
 		
 	@else
 	
-		<p class="fulltext"> Landing Page </p>
+		<p class="fulltext spacer"> Landing Page </p>
 	
 	@endif
 @endsection

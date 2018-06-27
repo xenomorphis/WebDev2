@@ -19,7 +19,7 @@
         <!-- Styles -->
         <style>
             .full-height {
-                height: 100vh;
+                min-height: 89vh;
             }
 
             .flex-center {
@@ -40,6 +40,10 @@
 
             .m-b-md {
                 margin-bottom: 30px;
+            }
+            
+            #spacer-footer {
+					 padding-bottom: 40px;            
             }
             
             @yield('styles')
@@ -91,6 +95,8 @@
             	</div>
        		</div>
         </div>
+        
+        <div id="spacer-footer"></div>
         
         <footer>
             <p> &copy;2018 SpotLight, NAC</p> <p> |</p>
