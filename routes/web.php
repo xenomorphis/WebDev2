@@ -23,5 +23,6 @@ Auth::routes();
 
 Route::get('/admin', 'HomeController@index')->name('home');
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
+Route::get('/search', 'Search@query_json')->name('search');
 
 Route::view('/admin2','admin2');
