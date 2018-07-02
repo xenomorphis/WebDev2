@@ -15,6 +15,9 @@ class concert extends Model
         return $this->hasMany('App\event');
     }
     
+    public function image() { 
+        return $this->hasOne('App\image');
+    }
 //    public function location(){
 //        return $this->belongsToMany('App\location');
 //    }
