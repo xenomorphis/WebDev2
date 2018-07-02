@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder
         $this->call('ConcertTableSeeder');
         $this->call('LocationTableSeeder');
         $this->call('EventTableSeeder');
+        $this->call('UserTableSeeder');
         $this->call('TicketTableSeeder');
         $this->call('Artist_ConcertTableSeeder');
     }

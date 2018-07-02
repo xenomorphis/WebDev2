@@ -22,7 +22,8 @@ class TicketTableSeeder extends Seeder
 	            'catDescription' => $faker->word,
 	            'available' => $faker->numberBetween(0,1),
                 'reserved' => $faker->numberBetween(0,1),
-                'event_id' => $faker->numberBetween(1,10)
+                'event_id' => $faker->numberBetween(1,10),
+                'user_id' => $faker->numberBetween(1,10)
 	        ]);
 	} 
     }
