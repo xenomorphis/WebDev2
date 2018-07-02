@@ -81,6 +81,7 @@
 @endsection
 
 @section('maincontent')
+
 	@if (Request::path() == 'artists')
 
 		<p class="fulltext"> Page 2</p>

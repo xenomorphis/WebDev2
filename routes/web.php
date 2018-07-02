@@ -11,18 +11,19 @@
 |
 */
 
-Route::view('/','shop');
-Route::view('/artists','shop');
-Route::view('/cabaret','shop');
-Route::view('/concerts','shop');
-Route::view('/locations','shop');
-Route::view('/theatre','shop');
+Route::get('/','ShopController@shop');
+Route::get('/artists','ShopController@shop');
+Route::get('/cabaret','ShopController@shop');
+Route::get('/concerts','ShopController@shop');
+Route::get('/locations','ShopController@shop');
+Route::get('/theatre','ShopController@shop');
 Route::view('/disclaimer','disclaimer');
 Route::view('/impressum','impressum');
 Auth::routes();
 
+Route::get('/search', 'ShopController@search')->name('search');
+Route::get('/test', 'HomeController@test')->name('test');
 Route::get('/admin', 'HomeController@index')->name('home');
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
-Route::get('/search', 'Search@query_json')->name('search');
 
 Route::view('/admin2','admin2');
