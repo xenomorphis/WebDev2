@@ -45,8 +45,8 @@
 		position: absolute;
 		width: 1020px;
 		margin-bottom: 80px;
+		margin-left: 50px;
 		top: 240px;
-		left: 440px;
 		z-index: 2;
 	}
 @endsection
