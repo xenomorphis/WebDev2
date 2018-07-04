@@ -45,7 +45,7 @@
 		position: absolute;
 		width: 1020px;
 		margin-bottom: 80px;
-		margin-left: 50px;
+		margin-left: 45px;
 		top: 240px;
 		z-index: 2;
 	}
