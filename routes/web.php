@@ -23,6 +23,6 @@ Auth::routes();
 
 Route::get('/search', 'ShopController@search')->name('search');
 Route::get('/admin', 'HomeController@index')->name('home');
-Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
+Route::get('/logout', 'Auth\LoginController@logout');
 
 Route::view('/admin2','admin2');
