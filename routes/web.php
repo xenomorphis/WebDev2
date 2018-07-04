@@ -22,7 +22,6 @@ Route::view('/impressum','impressum');
 Auth::routes();
 
 Route::get('/search', 'ShopController@search')->name('search');
-Route::get('/test', 'HomeController@test')->name('test');
 Route::get('/admin', 'HomeController@index')->name('home');
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 

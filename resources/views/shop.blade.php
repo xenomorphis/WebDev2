@@ -104,7 +104,7 @@
 		
 	@else
 	
-		<p class="fulltext spacer"> Landing Page </p>
+		<p class="fulltext spacer"> {{$testString}} </p>
 	
 	@endif
 @endsection
