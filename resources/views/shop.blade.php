@@ -95,9 +95,9 @@
             <th>Genre</th>
         </tr>
         @foreach($artists as $artist)
-        <tr>         
-                <td>{{$artist->name}}</td>
-                <td>{{$artist->genre}}</td>  
+        <tr>
+            <td><a href="/artists/{{$artist->id}}">{{$artist->name}}</a></td>
+            <td><a href="/artists/{{$artist->id}}">{{$artist->genre}}</a></td>    
         </tr>
          @endforeach
     </table>
