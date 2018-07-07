@@ -21,6 +21,10 @@ footer {
 	transition: opacity 0.5s;
 	-webkit-transition: opacity 0.5s;
 	}
+
+h2, b {
+    color: rgb(46,42,136);
+}
 	
 footer.shown {
 	opacity: 1;
