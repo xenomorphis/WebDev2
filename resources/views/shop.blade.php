@@ -88,7 +88,19 @@
 
 	@if (Request::path() == 'artists')
 
-		<p class="fulltext"> Page 2</p>
+		<!-- <p class="fulltext"> Page 2</p> -->
+        <table class="fulltext">
+        <tr>
+            <th>Name</th>
+            <th>Genre</th>
+        </tr>
+        @foreach($artists as $artist)
+        <tr>         
+                <td>{{$artist->name}}</td>
+                <td>{{$artist->genre}}</td>  
+        </tr>
+         @endforeach
+    </table>
 		
 	@elseif (Request::path() == 'cabaret')
 	
