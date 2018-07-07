@@ -48,7 +48,8 @@ class ArtistsController extends Controller
      */
     public function show($id)
     {
-        //
+        $artist = Artist::find($id);
+        return view('show', compact('artist'));
     }
 
     /**
