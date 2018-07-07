@@ -89,7 +89,7 @@
 	@if (Request::path() == 'artists')
 
 		<!-- <p class="fulltext"> Page 2</p> -->
-        <table class="fulltext">
+    <table class="fulltext">
         <tr>
             <th>Name</th>
             <th>Genre</th>
@@ -108,11 +108,35 @@
 	
 	@elseif (Request::path() == 'concerts')
 	
-		<p class="fulltext"> Page 5</p>
+		<!-- <p class="fulltext"> Page 5</p> -->
+    <table class="fulltext">
+        <tr>
+            <th>Name</th>
+            <th>Beschreibung</th>
+        </tr>
+        @foreach($concerts as $concert)
+        <tr>         
+                <td>{{$concert->name}}</td>
+                <td>{{$concert->description}}</td> 
+        </tr>
+         @endforeach
+    </table>
 
 	@elseif (Request::path() == 'locations')
 
-		<p class="fulltext"> Page 3</p>
+		<!-- <p class="fulltext"> Page 3</p> -->
+    <table class="fulltext">
+        <tr>
+            <th>Name</th>
+            <th>Ort</th>
+        </tr>
+        @foreach($locations as $location)
+        <tr>         
+                <td>{{$location->name}}</td>
+                <td>{{$location->place}}</td>  
+        </tr>
+         @endforeach
+    </table>
 
 	@elseif (Request::path() == 'theatre')
 
