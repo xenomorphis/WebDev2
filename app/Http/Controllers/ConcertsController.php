@@ -15,7 +15,8 @@ class ConcertsController extends Controller
      */
     public function index()
     {
-        //
+        $concerts = Concert::all();
+        return view('shop', compact('concerts'));
     }
 
     /**
