@@ -145,8 +145,9 @@
 		<p class="fulltext"> Page 6</p>
 		
 	@else
-	
-		<p class="fulltext spacer"> {{$testString}} </p>
-	
+	   @foreach($artists as $artist)     
+<p class="fulltext spacer"> <b>{{$artist->name}}</b> ist ein sehr bekannter Künstler und macht <b>{{$artist->genre}}</b> Musik. Er ist seit Jahren die Nummer 1 und weiß sich auf der Bühne zu präsentieren. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br><a href="/"><b>-> zu {{$artist->name}} Konzerten</b></a></p>
+            
+        @endforeach
 	@endif
 @endsection
