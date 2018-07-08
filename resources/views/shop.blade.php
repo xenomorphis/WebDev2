@@ -96,7 +96,7 @@
         </tr>
         @foreach($artists as $artist)
         <tr>
-            <td><a href="/artists/{{$artist->id}}">{{$artist->name}}</a></td>
+            <td><a href="/artists/{{$artist->id}}">{{$artist->name}}</a></td> <!-- WICHTIG!!! -->
             <td><a href="/artists/{{$artist->id}}">{{$artist->genre}}</a></td>    
         </tr>
          @endforeach
@@ -116,8 +116,8 @@
         </tr>
         @foreach($concerts as $concert)
         <tr>         
-                <td>{{$concert->name}}</td>
-                <td>{{$concert->description}}</td> 
+            <td><a href="concerts/{{$concert->id}}">{{$concert->name}}</a></td>
+            <td><a href="concerts/{{$concert->id}}">{{$concert->description}}</a></td>     
         </tr>
          @endforeach
     </table>
@@ -132,8 +132,8 @@
         </tr>
         @foreach($locations as $location)
         <tr>         
-                <td>{{$location->name}}</td>
-                <td>{{$location->place}}</td>  
+                <td><a href="locations/{{$location->id}}">{{$location->name}}</a></td>
+                <td><a href="locations/{{$location->id}}">{{$location->place}}</a></td>  
         </tr>
          @endforeach
     </table>
