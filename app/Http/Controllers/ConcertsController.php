@@ -48,7 +48,8 @@ class ConcertsController extends Controller
      */
     public function show($id)
     {
-        //
+        $concert = Concert::find($id);
+        return view('shows.showConcert', compact('concert'));
     }
 
     /**

@@ -48,7 +48,8 @@ class LocationsController extends Controller
      */
     public function show($id)
     {
-        //
+        $location = Location::find($id);
+        return view('shows.showLocation', compact('location'));
     }
 
     /**
