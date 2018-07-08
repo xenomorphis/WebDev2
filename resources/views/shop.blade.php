@@ -101,6 +101,8 @@
         </tr>
          @endforeach
     </table>
+    <p class="fulltext">Admin:</p>
+    <button type="button" class="btn-md btn-primary search-gui"><a href="/artists/create">KÜNSTLER hinzufügen</a></button> <!-- create()-Funktion wird aufgerufen! -->
 		
 	@elseif (Request::path() == 'cabaret')
 	
