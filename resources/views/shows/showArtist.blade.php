@@ -55,9 +55,8 @@
 @endsection
 
 @section('maincontent') 
-    <!-- Hier sollen über if-Abfrage die verschiedenen Pfade mit entsprechender ID erreicht werden -->
            <h2>Künstler: {{ $artist->name }}</h2>
             <h5>Genre: {{ $artist->genre }}</h5>
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy <b>{{ $artist->name }}</b> eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus <b>{{ $artist->genre }}</b>. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
-            <button type="submit" class="btn-md btn-primary search-gui">KONZERTE anzeigen</button>
+            <button type="button" class="btn-md btn-primary search-gui">KONZERTE anzeigen</button>
 @endsection
