@@ -26,7 +26,7 @@ class ArtistsController extends Controller
      */
     public function create()
     {
-        //
+        return view('creates.createArtist');
     }
 
     /**
@@ -37,7 +37,16 @@ class ArtistsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name' => 'required|min:2',
+            'genre' => 'required|min:2'
+        ]);
+        
+        $artist = new Artist;
+        $artist->name = request('name');
+        $artist->genre = request('genre');
+        $artist->save();
+        return redirect('/artists/');
     }
 
     /**
