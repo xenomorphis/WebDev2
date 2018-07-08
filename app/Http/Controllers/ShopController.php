@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
+use App\Artist;
 
 class ShopController extends Controller
 {
@@ -57,7 +59,7 @@ class ShopController extends Controller
     }
     
     public function shop() {
-    		
-		  return view ("shop", ["testString" => "bla"]);
+          $artists = DB::table('artists')->select(['name', 'genre'])->take(3)->get();
+		  return view ("shop", compact('artists'));
     }
 }
