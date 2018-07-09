@@ -2,13 +2,14 @@
 
 @section('styles')
     h2 {
-        
+      padding-bottom: 25px; 
     }
-	hr {
+    
+	 hr {
 		color: #f1f707;
 		background-color: #f1f707;
 		height: 2px;
-	}
+	 }
 	
 	.btn-primary {
 		background-color: rgb(242,249,135);
@@ -55,21 +56,21 @@
 @endsection
 
 @section('maincontent') 
-     <h2>KÜNSTLER hinzufügen</h2>
+     <h2 class="highlight-text">Künstler hinzufügen</h2>
         <form method="post" action="/artists">
             {{ csrf_field() }}
             <p>
-                <label for="name">Name</label>
+                <label class="search-gui" for="name">Name</label>
                 <input type="text" name="name" id="name" value="{{old('name')}}">
             </p>
             
             <p>
-                <label for="genre">Genre</label>
+                <label class="search-gui" for="genre">Genre</label>
                 <input type="text" name="genre" id="genre" value="{{old('genre')}}">
             </p>
             
             <p>
-                <input type="submit" value="Hinzufügen">
+                <input class="btn-primary" type="submit" value="Hinzufügen">
             </p>
         </form>
 
