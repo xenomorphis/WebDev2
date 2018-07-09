@@ -56,6 +56,7 @@
 @endsection
 
 @section('maincontent') 
+	<div class="fulltext">
      <h2 class="highlight-text">Künstler hinzufügen</h2>
         <form method="post" action="/artists">
             {{ csrf_field() }}
@@ -85,4 +86,5 @@
                 </ul>
             </div>
         @endif
+   </div>
 @endsection
