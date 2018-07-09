@@ -15,6 +15,15 @@
 		font-family: 'Source Sans Pro';
 	}
 	
+    .btn-primary > a {
+		color: rgb(46,42,136);
+		font-family: 'Source Sans Pro';
+	}
+    .btn-primary > a:hover {
+        text-decoration: none;
+		color: #ffffff;
+		font-family: 'Source Sans Pro';
+	}
 	.fulltext {
 		padding-top: 40px;	
 	}
@@ -89,7 +98,7 @@
 	@if (Request::path() == 'artists')
 
 		<!-- <p class="fulltext"> Page 2</p> -->
-    <table class="fulltext">
+    <table class="fulltext table_link">
         <tr>
             <th>Name</th>
             <th>Genre</th>
@@ -111,7 +120,7 @@
 	@elseif (Request::path() == 'concerts')
 	
 		<!-- <p class="fulltext"> Page 5</p> -->
-    <table class="fulltext">
+    <table class="fulltext table_link">
         <tr>
             <th>Name</th>
             <th>Beschreibung</th>
@@ -127,7 +136,7 @@
 	@elseif (Request::path() == 'locations')
 
 		<!-- <p class="fulltext"> Page 3</p> -->
-    <table class="fulltext">
+    <table class="fulltext table_link">
         <tr>
             <th>Name</th>
             <th>Ort</th>
