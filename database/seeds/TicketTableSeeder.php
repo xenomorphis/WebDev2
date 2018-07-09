@@ -28,6 +28,5 @@ class TicketTableSeeder extends Seeder
 	} 
     }
 }
-
-
 ?>
+

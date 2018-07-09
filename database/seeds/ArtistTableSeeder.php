@@ -24,5 +24,4 @@ class ArtistTableSeeder extends Seeder
 	} 
     }
 }
-
 ?>
