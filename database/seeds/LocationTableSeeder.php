@@ -26,3 +26,4 @@ class LocationTableSeeder extends Seeder
 }
 
 
+?>

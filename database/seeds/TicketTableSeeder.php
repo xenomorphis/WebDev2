@@ -30,3 +30,4 @@ class TicketTableSeeder extends Seeder
 }
 
 
+?>

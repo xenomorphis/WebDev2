@@ -24,3 +24,5 @@ class Artist_ConcertTableSeeder extends Seeder
 	} 
     }
 }
+
+?>
