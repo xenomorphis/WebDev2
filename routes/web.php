@@ -25,8 +25,6 @@ Route::get('/search', 'ShopController@search')->name('search');
 Route::get('/admin', 'HomeController@index')->name('home');
 Route::get('/logout', 'Auth\LoginController@logout');
 
-Route::view('/admin2','admin2');
-
 Route::resource('artists', 'ArtistsController');
 Route::resource('locations', 'LocationsController');
 Route::resource('concerts', 'ConcertsController');
