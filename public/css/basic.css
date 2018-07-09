@@ -22,7 +22,7 @@ footer {
 	-webkit-transition: opacity 0.5s;
 	}
 
-h2, b {
+h2, b, th {
     color: rgb(46,42,136);
 }
 	
@@ -40,6 +40,16 @@ footer > p {
 	margin-right: 15px;
 	display: inline;
 	}
+
+td > a {
+    font-family: Source Sans Pro;
+	color: #000000;
+}
+
+td > a:hover {
+    text-decoration: none;
+	color:  rgb(46,42,136);
+}
 	
 footer > p, a {
 	font-family: Source Sans Pro;
