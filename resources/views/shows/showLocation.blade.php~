@@ -56,10 +56,8 @@
 
 @section('maincontent') 
     <!-- Hier sollen über if-Abfrage die verschiedenen Pfade mit entsprechender ID erreicht werden -->
-    <div class="fulltext">
-            <h2 class="highlight-text">Veranstaltungsort: {{ $location->name }}</h2>
+           <h2>Veranstaltungsort: {{ $location->name }}</h2>
             <h5>Ort: {{ $location->place }}</h5>
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy <b>{{ $location->name }}</b> eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus <b>{{ $location->place }}</b>. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
             <button type="submit" class="btn-md btn-primary search-gui">KONZERTE anzeigen</button>
-    </div>
 @endsection
